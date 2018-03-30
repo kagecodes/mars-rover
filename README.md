@@ -56,13 +56,15 @@ What is the easiest "thing" to reason about here? The Rover! We can already star
 As we already know, **objects have state and behaviour**. In Ruby, our classes have instance variables and methods. What kind of state do we need for our rovers? What about behaviours?
 
 **State**
-x coordinate
-y coordinate
-direction
+- x coordinate
+- y coordinate
+- direction
+
 **Behaviour**
 - read instruction
 - move
 - turn
+
 Start by creating a Rover class that has these properties. Given that each rover starts with a location and direction, perhaps it's a good idea to have an i ```initialize``` method for each rover that accepts these parameters.
 
 Next up we'll need to think about behaviour. Behaviours have the ability to read and affect the state of an object. We express those as methods.
