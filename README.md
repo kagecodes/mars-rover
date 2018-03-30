@@ -5,6 +5,7 @@ A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This pl
 
 Imagine a grid that looks something like this
 
+```
   _ _ _ _ _ _ _ _ _
 9|_|_|_|_|_|_|_|_|_|        N
 8|_|_|_|_|_|_|_|_|_|      W   E
@@ -17,6 +18,8 @@ Imagine a grid that looks something like this
 1|_|_|_|_|_|_|_|_|_|
 0 1 2 3 4 5 6 7 8 9
 
+```
+
 In order to control a rover, NASA sends a string of letters. The possible letters are 'L', 'R' and 'M'.
 
 - 'L' and 'R' makes the rover spin 90 degrees left or right respectively, without moving from its current spot.
@@ -24,6 +27,7 @@ In order to control a rover, NASA sends a string of letters. The possible letter
 
 ### Example and Output
 
+```
 Test Input 1:
 1 2 N                > our start position and direction
 LMLMLMLMM            > a series of move and turn instructions.
@@ -39,7 +43,7 @@ MMRMMRMRRM
 
 Expected Output:
 5 1 E
-
+```
 
 ## How To Approach This Problem
 
