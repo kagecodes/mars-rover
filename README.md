@@ -60,18 +60,18 @@ x coordinate
 y coordinate
 direction
 **Behaviour**
-read instruction
-move
-turn
-Start by creating a Rover class that has these properties. Given that each rover starts with a location and direction, perhaps it's a good idea to have an initialize method for each rover that accepts these parameters.
+- read instruction
+- move
+- turn
+Start by creating a Rover class that has these properties. Given that each rover starts with a location and direction, perhaps it's a good idea to have an i ```initialize``` method for each rover that accepts these parameters.
 
 Next up we'll need to think about behaviour. Behaviours have the ability to read and affect the state of an object. We express those as methods.
 
-read_instruction should accept an instruction and decide whether to tell the rover to move or turn. It simply delegates to more specific behaviour.
+```read_instruction``` should accept an instruction and decide whether to tell the rover to move or turn. It simply delegates to more specific behaviour.
 
-move affects the position of the rover. Depending on current direction and position, you'll need to update the x or y coordinates.
+```move``` affects the position of the rover. Depending on current direction and position, you'll need to update the x or y coordinates.
 
-turn affects the direction of the rover. Depending on the current direction of the rover, the new direction will be determined with either turning L or R.
+```turn``` affects the direction of the rover. Depending on the current direction of the rover, the new direction will be determined with either turning ```L``` or ```R```.
 
 Once you've figured out how to move and turn your rover, the rest gets much easier because you got the seemingly complex stuff out of the way first! All you'll need to figure out from here is how to read and split up the instructions so that you can pass them on to your rovers.
 
