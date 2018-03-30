@@ -40,9 +40,9 @@ class Rover
     elsif @direction == 'E'
       @x_coordinate += 1
     elsif @direction == 'S'
-      @y_coordinate += 1
+      @y_coordinate -= 1
     elsif @direction == 'W'
-      @x_coordinate += 1
+      @x_coordinate -= 1
     end
   end
 
@@ -56,7 +56,6 @@ class Rover
         move
       end
     end
-
   end
 
 end
