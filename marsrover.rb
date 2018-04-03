@@ -41,15 +41,15 @@ class Rover
       @x_coordinate += 1
     elsif @direction == 'S'
       @y_coordinate -= 1
-    elsif @direction == 'W'
+    else @direction == 'W'
       @x_coordinate -= 1
     end
   end
 
   def read_instruction(instruction)
-    array = []
-    array.push(instruction.split(','))
-    array.each do |letter|
+
+    manual = instruction.split(//)
+    manual.each do |letter|
       if letter == 'L' || letter == 'R'
         turn(letter)
       else letter == 'M'
